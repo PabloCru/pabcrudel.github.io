@@ -6,13 +6,12 @@
   "author": "Pablo Cru Delhom",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "eslint && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "astro check && eslint . --ext js,ts,cjs,astro"
+    "lint": "eslint"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.9",
@@ -23,11 +22,10 @@
     "typescript": "^5.4.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.3.1",
-    "@typescript-eslint/parser": "^7.3.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-astro": "^0.31.4",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "semistandard": "^17.0.0"
+    "@eslint/js": "^9.10.0",
+    "eslint": "^9.10.0",
+    "eslint-plugin-astro": "^1.2.4",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.5.0"
   }
 }

@@ -20,8 +20,8 @@ const clearedWidths = Array.from(new Set(widths)); // Clear repeated widths
 
 const result = await Promise.all(
   clearedFormats.map(
-    async (format) => await getImage({ src, format, widths: clearedWidths })
-  )
+    async (format) => await getImage({ src, format, widths: clearedWidths }),
+  ),
 );
 
 const fallbackImageData = result.pop();
@@ -36,7 +36,7 @@ const sources = result.map((source) => getImageSource(source.srcSet.values));
     sources.map((extension) =>
       extension.map(({ media, url, attributes }) => (
         <source media={media} srcset={url} {...attributes} />
-      ))
+      )),
     )
   }
   <img

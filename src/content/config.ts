@@ -66,7 +66,7 @@ export const collections = {
       description: z.string(),
       highlights: z.array(z.string()),
       sourceCode: z.string().nullable(),
-      preview: z.string().nullable()
+      preview: z.string().nullable(),
     }),
   }),
 };

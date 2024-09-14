@@ -4,5 +4,5 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://pablocru.github.io",
-  integrations: [sitemap()]
+  integrations: [sitemap()],
 });
