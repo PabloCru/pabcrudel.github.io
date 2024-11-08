@@ -8,3 +8,9 @@ they are publicly accessible as routes of this website.
 
 Take a look at my website here:
 [pablocru.github.io](https://pablocru.github.io)
+
+## Contribute
+
+If you notice any mistakes or have suggestions, I’m all ears! I appreciate any feedback so
+don't hesitate to [open an Issue on
+GitHub](https://github.com/pablocru/pablocru.github.io/issues).
