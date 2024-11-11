@@ -1,0 +1,135 @@
+---
+import { Picture } from "astro:assets";
+import fireSpotterTeam from "../images/fire-spotter-team.jpg";
+---
+
+<article id="hackathon-winner-firespotter">
+  <h2>
+    FireSpotter, hackathon winner at <abbr
+      title="National Aeronautics and Space Administration">NASA</abbr
+    >
+    SpaceApps Valencia <time datetime="2023">2023</time>
+  </h2>
+
+  <p>
+    I participated with my classmates in the NASA SpaceApp Hackathon in Valencia. We were
+    there because Jorge Lopez, our teacher, encouraged us to participate not only to face
+    the challenge and gain experience but also to improve our self-confidence.
+  </p>
+
+  <p>
+    The Hackathon started on <time datetime="2023-10-06T19:00"
+      >Friday, October 6th, at 7:00 PM</time
+    > at
+    <a
+      href="https://wayco.es/coworking-en-valencia/cabanyal/"
+      title="Coworking Space in Valencia">Wayco Cabanyal</a
+    >
+    After the presentations, we began our challenge:
+  </p>
+
+  <blockquote
+    id="hackathon-challenge"
+    cite="https://www.spaceappschallenge.org/2023/find-a-team/juandeteam/?tab=project"
+  >
+    <h3>Managing Fire: Increasing Community-based Fire Management Opportunities</h3>
+    <p>
+      NASA's satellite-derived active fire data are freely available and provide valuable
+      information to a wide range of users. However, as wildfires continue to increase in
+      frequency, number, and size, the need for more diverse stakeholder groups to
+      understand and use these data is rapidly expanding. Your challenge is to develop
+      solutions to address fire and natural resource monitoring through innovative use of
+      technology and publicly available data, enabling local communities to report and
+      monitor fires and/or improve current data distribution.
+    </p>
+  </blockquote>
+
+  <p>
+    We worked hard until <time datetime="2023-10-08T17:00">Sunday at 5:00 PM</time> when we
+    showed our projects. Facing the challenge over the weekend was a big test for us, and we
+    learned a lot about working as a real team using Git and developing an <abbr
+      title="Application"
+      >App
+    </abbr> from scratch using vanilla <abbr title="JavaScript">JS</abbr>,
+    <abbr title="Hypertext Markup Language">HTML</abbr> and <abbr
+      title="Cascade Style Sheet">CSS</abbr
+    >.
+  </p>
+
+  <p>
+    After all the hard work and collaboration, we were thrilled to present our real app
+    during the event. Despite not using the latest technologies or groundbreaking
+    approaches, our app, deployed on GitHub Pages, successfully addressed the challenge
+    with a minimal viable product.
+  </p>
+
+  <figure>
+    <Picture
+      src={fireSpotterTeam}
+      width={500}
+      alt="FireSpotter Team winners of the NASA SpaceApp's Hackathon"
+      formats={["avif", "webp"]}
+    />
+    <figcaption>FireSpotter Team holding the victory title.</figcaption>
+  </figure>
+
+  <p>
+    Winning the event was a fantastic surprise, and it showed us that even simple
+    solutions can make a meaningful impact. This experience has fueled our enthusiasm to
+    keep learning and contributing to innovative projects in the future.
+  </p>
+
+  <section id="why-i-forked-firespotter">
+    <h3>Fostering Growth: The Purpose Behind the Fork</h3>
+
+    <p>
+      Since the project's inception, my consistent commitment has been instrumental in
+      refining features, addressing functionalities, and introducing enhancements to
+      elevate the user experience.
+    </p>
+
+    <p>
+      To transparently showcase and document these contributions, I've created a personal
+      fork of the main repository. This fork serves as a dedicated space to highlight my
+      work, providing a platform for effective code management.
+    </p>
+
+    <p>
+      It's important to note that, in maintaining the project's integrity, all
+      enhancements are proposed through pull requests (PRs) to the main repository. While
+      currently the primary contributor, my focus is on upholding code consistency and
+      quality.
+    </p>
+  </section>
+
+  <section id="explore-firespotter">
+    <h3>GitHub Repository and Live Deployment: Explore Fire Spotter!</h3>
+
+    <p>
+      Ready to see Fire Spotter in action?
+      {
+        /*
+          The link below is an absolute URL pointing to the Fire Spotter project.
+          Using `href="fire-spotter"` with a relative path doesn't work here,
+          as `fire-spotter.html` isn't included in this repository.
+          Fire Spotter is in its own repository at `https://github.com/pablocru/fire-spotter`
+          and deployed separately on GitHub Pages.
+        */
+      }
+      <a
+        href="https://pablocru.github.io/fire-spotter/"
+        title="See Fire Spotter in Action">Explore the live deployment</a
+      >. Immerse yourself in the project's features and functionalities, and feel free to
+      provide feedback or get involved! Your participation is key to the project's
+      success.
+    </p>
+
+    <p>
+      Delve into the heart of Fire Spotter by visiting its <a
+        href="https://github.com/pablocru/fire-spotter"
+        title="Dive into Fire Spotter code">GitHub repository</a
+      > and witnessing the ongoing development and collaborative efforts. The repository provides
+      insights into the code structure and welcomes your valuable contributions.
+    </p>
+  </section>
+</article>
