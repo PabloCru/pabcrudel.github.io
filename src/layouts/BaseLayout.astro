@@ -1,5 +1,6 @@
 ---
 import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
 
 interface Props {
   title?: string;
@@ -46,6 +47,8 @@ const { description = fallbackDescription, title = fallbackTitle } = Astro.props
     <link rel="stylesheet" href="/layout.css" />
   </head>
   <body>
+    <Navbar />
+
     <slot />
 
     <Footer />
